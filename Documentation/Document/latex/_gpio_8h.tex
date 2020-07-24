@@ -1,0 +1,73 @@
+\hypertarget{_gpio_8h}{}\doxysection{C\+:/\+Users/\+A\+D\+H\+M/\+Desktop/\+Task/\+Task/\+Gpio.h File Reference}
+\label{_gpio_8h}\index{C:/Users/ADHM/Desktop/Task/Task/Gpio.h@{C:/Users/ADHM/Desktop/Task/Task/Gpio.h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gpio_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+C\+PU}}~8000000\+UL
+\item 
+\#define \mbox{\hyperlink{_gpio_8h_a8fdaaf3f917a17d92006fade6460aab8}{O\+C1A}}~1
+\item 
+\#define \mbox{\hyperlink{_gpio_8h_afa6f3725dc225ef73a7806b799ff5cb5}{O\+C1B}}~2
+\item 
+\#define \mbox{\hyperlink{_gpio_8h_a8924727617c50dbedfa4772a7eaf140a}{S\+E\+T\+\_\+\+B\+IT}}(R\+EG,  I\+N\+DX)~((R\+EG)$\vert$=(1$<$$<$(I\+N\+DX)))
+\item 
+\#define \mbox{\hyperlink{_gpio_8h_a159d4eb7ba4014eb3580f3ee3e0f4728}{C\+L\+R\+\_\+\+B\+IT}}(R\+EG,  I\+N\+DX)~((R\+EG)\&=$\sim$(1$<$$<$(I\+N\+DX)))
+\item 
+\#define \mbox{\hyperlink{_gpio_8h_a7eccaa0712eda5e6921fcaa2ad141844}{R\+E\+A\+D\+\_\+\+B\+IT}}(R\+EG,  I\+N\+DX)~((R\+EG$>$$>$I\+N\+DX)\&0x01)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_gpio_8h_a17d6fca7d14ba1589b6ba141d13ab816}{H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+I\+N\+IT}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gpio_8h_a159d4eb7ba4014eb3580f3ee3e0f4728}\label{_gpio_8h_a159d4eb7ba4014eb3580f3ee3e0f4728}} 
+\index{Gpio.h@{Gpio.h}!CLR\_BIT@{CLR\_BIT}}
+\index{CLR\_BIT@{CLR\_BIT}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{CLR\_BIT}{CLR\_BIT}}
+{\footnotesize\ttfamily \#define C\+L\+R\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{I\+N\+DX }\end{DoxyParamCaption})~((R\+EG)\&=$\sim$(1$<$$<$(I\+N\+DX)))}
+
+\mbox{\Hypertarget{_gpio_8h_a43bafb28b29491ec7f871319b5a3b2f8}\label{_gpio_8h_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{Gpio.h@{Gpio.h}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+C\+PU~8000000\+UL}
+
+\mbox{\Hypertarget{_gpio_8h_a8fdaaf3f917a17d92006fade6460aab8}\label{_gpio_8h_a8fdaaf3f917a17d92006fade6460aab8}} 
+\index{Gpio.h@{Gpio.h}!OC1A@{OC1A}}
+\index{OC1A@{OC1A}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{OC1A}{OC1A}}
+{\footnotesize\ttfamily \#define O\+C1A~1}
+
+\mbox{\Hypertarget{_gpio_8h_afa6f3725dc225ef73a7806b799ff5cb5}\label{_gpio_8h_afa6f3725dc225ef73a7806b799ff5cb5}} 
+\index{Gpio.h@{Gpio.h}!OC1B@{OC1B}}
+\index{OC1B@{OC1B}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{OC1B}{OC1B}}
+{\footnotesize\ttfamily \#define O\+C1B~2}
+
+\mbox{\Hypertarget{_gpio_8h_a7eccaa0712eda5e6921fcaa2ad141844}\label{_gpio_8h_a7eccaa0712eda5e6921fcaa2ad141844}} 
+\index{Gpio.h@{Gpio.h}!READ\_BIT@{READ\_BIT}}
+\index{READ\_BIT@{READ\_BIT}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{READ\_BIT}{READ\_BIT}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{I\+N\+DX }\end{DoxyParamCaption})~((R\+EG$>$$>$I\+N\+DX)\&0x01)}
+
+\mbox{\Hypertarget{_gpio_8h_a8924727617c50dbedfa4772a7eaf140a}\label{_gpio_8h_a8924727617c50dbedfa4772a7eaf140a}} 
+\index{Gpio.h@{Gpio.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{I\+N\+DX }\end{DoxyParamCaption})~((R\+EG)$\vert$=(1$<$$<$(I\+N\+DX)))}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_gpio_8h_a17d6fca7d14ba1589b6ba141d13ab816}\label{_gpio_8h_a17d6fca7d14ba1589b6ba141d13ab816}} 
+\index{Gpio.h@{Gpio.h}!HARDWARE\_INIT@{HARDWARE\_INIT}}
+\index{HARDWARE\_INIT@{HARDWARE\_INIT}!Gpio.h@{Gpio.h}}
+\doxysubsubsection{\texorpdfstring{HARDWARE\_INIT()}{HARDWARE\_INIT()}}
+{\footnotesize\ttfamily void H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
